@@ -223,6 +223,10 @@
     
 }
 
+.name a {
+    color: white;
+}
+
 .name i:hover{
     font-size: 18px;
 }
