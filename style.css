@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+
+.navbar{
+    background: rgba(0, 0, 0, 0.9) url('/img/bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.menuBtn{
+    display: none;
+}
+
+.navbar ul i{
+        display: none;
+}
+
+.navbar ul{
+    display: flex;
+    margin-left: 5px;
+}
+
+.navbar ul li{
+    list-style: none;
+    padding: 12px 22px;
+}
+
+.navbar ul li::after{
+    content: "";
+    margin: auto;
+    height: 2px;
+    background-color: white;
+    display: block;
+    border-radius: 5px;
+    width: 0%;
+    transition: 0.5s;
+    
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 4px 0px;
+    margin: 2px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+
+.home{
+    height: 100vh;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.8) url('/img/bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.home-content{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+}
+
+.home-content p:nth-child(3){
+    font-size: 1.5rem;
+
+}
+
+.home-content h1{
+    font-size: 4rem;
+}
+
+.meetBtn{
+    padding: 7px 23px;
+    margin: 12px 0px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s
+}
+
+.meetBtn:hover{
+    background: gray;
+}
+
+.topBtn{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin: 20px 40px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    z-index: 2;
+    opacity: 0.7;
+
+}
+
+.topBtn i {
+    padding: 8px 10px;
+    font-size: 30px;
+}
+
+
+/* Categories Section */
+
+.image img{
+    width: 140px;
+   
+}
+
+.image{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    justify-content: center;
+    grid-gap: 60px;
+}
+
+.image1{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    justify-content: center;
+    grid-gap: 60px;
+}
+
+
+
+.image1 img{
+    width: 180px;
+    height: 140px;
+}
+
+/* About Us Section */
+
+.aboutUs p{
+
+    padding: 5px;
+    margin: 5px;
+
+}
+
+.card img{
+    width: 120px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.card{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 30%);
+    background-color: #f6f8fb;
+    
+}
+
+/* Footer */
+
+.footer{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8);
+    
+}
+
+.footerLink{
+    margin-left: 100px;
+    position: relative;
+
+}
+
+.footerLink ul li{
+    list-style: none;
+    padding: 4px;
+
+}
+
+.footerLink ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.name{
+    color: white;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.fab{
+    margin: 5px;
+    cursor: pointer;
+    
+}
+
+.name i:hover{
+    font-size: 18px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    right: 50px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 36px;
+
+}
+
+.contact input{
+    margin: 5px;
+    border-radius: 5px;
+    padding: 3px 5px;
+    border: 1px solid gray;
+    background-color: #f6f8fb;
+    outline: none;
+}
+
+.contact button{
+    
+    width: 140px;
+    display: block;
+    margin: auto;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 7px;
+    border: 1px solid gray;
+    background: none;
+    color: #fff;
+}
+
+.contact button:hover{
+    background-color: gray;
+}
+
+
+
+
+/* Utility classes */
+
+.center{
+    text-align: center;
+    margin: 13px;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.subHeading{
+    font-size: 30px;
+    margin: 35px 66px;
+    position: relative;
+  text-align: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.subHeadingRight{
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    margin: 35px 66px;
+    font-family: 'Poppins', sans-serif;
+}
