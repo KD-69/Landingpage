@@ -9,7 +9,7 @@
 /* Navbar */
 
 .navbar{
-    background: rgba(0, 0, 0, 0.9) url('img/bg.jpg');
+    background: rgba(0, 0, 0, 0.9) url("img/bg.jpg");
     background-size: cover;
     background-blend-mode: darken;
 }
