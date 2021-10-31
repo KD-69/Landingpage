@@ -19,6 +19,9 @@
 
     }
 
+    .cardContainer{
+        flex-direction: column;
+    }
    
 
     .navbar ul li{
@@ -78,7 +81,7 @@
        background: none;
         position: absolute;
         background-color: rgb(24, 22, 22);
-        height: 50vh;
+        height: 100vh;
         left: -250px;
         width: 50%;
         transition: 0.5s;
